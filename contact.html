@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Het PrintAtelier - contact</title>
+  </head>
+  <body>
+    <div class="gridcontainer">
+      <header>
+        <a href="index.html">
+          <img
+            src="../hackathon/images/Logo Het PrintAtelier 300dpi.jpg"
+            alt=""
+          />
+        </a>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="shop.html">shop</a></li>
+          <li><a href="about.html">over ons</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="formcontainer">
+        <div class="formcontent">
+          <h2>Vragen?</h2>
+          <p>Vul onderstaand formulier in en we nemen contact met u op.</p>
+
+          <form
+            class="my-form"
+            enctype="multipart/form-data"
+            method="POST"
+            name="contact"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="form-group">
+              <label>Naam: </label>
+              <input type="text" name="name" />
+            </div>
+
+            <div class="form-group">
+              <label>Email: </label>
+              <input type="email" name="email" />
+            </div>
+
+            <div class="form-group">
+              <label>Telefoonnummer: </label>
+              <input type="tel" name="phone" />
+            </div>
+
+            <br />
+
+            Ik heb een vraag over:
+            <div class="form-group">
+              <label>EchtVlaardings</label>
+              <input type="checkbox" name="EchtVlaardings" />
+              <label>Footsies</label>
+              <input type="checkbox" name="Footsies" />
+              <label>Maatwerk</label>
+              <input type="checkbox" name="Maatwerk" />
+              <label>Overig</label>
+              <input type="checkbox" name="Overig" />
+            </div>
+            <br />
+
+            <div class="form-group">
+              <label>Mijn vraag: </label>
+              <textarea name="vraag"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label
+                >Upload een voorbeeld van uw gewenste ontwerp, indien van
+                toepassing.</label
+              >
+              <input type="file" name="file" />
+            </div>
+
+            <input type="submit" value="Verzenden" />
+          </form>
+
+          <div class="contactgegevens">
+            <h2>Onze adresgegevens:</h2>
+            <p>Het PrintAtelier</p>
+            <p>Hoogstraat 93</p>
+            <p>3131 BM Vlaardingen</p>
+            <p>info@printatelier.shop</p>
+            <p>06-48345339</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="socialmedia">
+          <a href="https://www.facebook.com/hetprintatelier" target="_blank">
+            <img
+              src="../Hackathon/images/facebook-logo-icon.png"
+              alt="Facebook"
+            />
+          </a>
+          <a href="https://www.instagram.com/hetprintatelier/" target="_blank">
+            <img src="../Hackathon/images/Instagram logo-01.png" alt="" />
+          </a>
+        </div>
+        <p>Copyright 2022 | PrintAtelier</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+body {
+  width: 100%;
+  background-color: #fff;
+  color: #000000;
+
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #69895a;
+}
+
+a:hover {
+  color: #000000;
+}
+
+p {
+  line-height: 1.25;
+  font-size: 1em;
+}
+
+h2 {
+  font-size: xx-large;
+  color: #69895a;
+  margin-bottom: -15px;
+}
+
+h3 {
+  font-size: medium;
+  color: #69895a;
+}
+
+.gridcontainer {
+  height: 100%;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 350px auto autopx autopx autopx autopx autopx 100px;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "mainimage mainimage"
+    "maintext maintext"
+    "showcase1 showcase2"
+    "showcase3 showcase4"
+    "showcase5 showcase6"
+    "showcase7 showcase8"
+    "showcase9 showcase10"
+    "footer footer";
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  grid-area: header;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav {
+  background-color: #fff;
+  grid-area: nav;
+  text-align: center;
+  padding-bottom: 5px;
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #69895a;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.mainimage {
+  background-image: url(../Hackathon/rollen\ flexfolie.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  grid-area: mainimage;
+  border-top: 15px solid #69895a;
+}
+
+.mainimageshop {
+  background-image: url(../Hackathon/images/collectie\ kussens.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  grid-area: mainimage;
+  border-top: 15px solid #69895a;
+}
+
+.topvideo {
+  grid-area: mainimage;
+  display: flexbox;
+  text-align: center;
+  border-top: 15px solid #69895a;
+}
+
+.transparentbox {
+  margin: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.transparentbox p {
+  padding: 100px 25px;
+  text-align: center;
+  color: #69895a;
+  font-weight: bold;
+  font-size: xx-large;
+  font-family: "Sedgwick Ave", cursive;
+}
+
+.maintext {
+  background-color: #fff;
+  grid-area: maintext;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+}
+
+.showcase1 {
+  grid-area: showcase1;
+  display: block;
+  text-align: center;
+}
+
+.showcase2 {
+  grid-area: showcase2;
+  display: block;
+  text-align: center;
+}
+
+.showcase3 {
+  grid-area: showcase3;
+  display: block;
+  text-align: center;
+}
+
+.showcase4 {
+  grid-area: showcase4;
+  display: block;
+  text-align: center;
+}
+
+.showcase5 {
+  grid-area: showcase5;
+  display: block;
+  text-align: center;
+}
+
+.showcase6 {
+  grid-area: showcase6;
+  display: block;
+  text-align: center;
+}
+
+.showcase7 {
+  grid-area: showcase7;
+  display: block;
+  text-align: center;
+}
+
+.showcase8 {
+  grid-area: showcase8;
+  display: block;
+  text-align: center;
+}
+
+.showcase9 {
+  grid-area: showcase9;
+  display: block;
+  text-align: center;
+}
+
+.showcase10 {
+  grid-area: showcase10;
+  display: block;
+  text-align: center;
+}
+
+footer {
+  background-color: #69895a;
+  grid-area: footer;
+  color: #fff;
+  padding: 75px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.socialmedia img {
+  padding: 15px;
+}
+
+.image {
+  text-align: center;
+}
+
+/* contactform */
+.formcontainer {
+  grid-area: maintext;
+  margin-left: 0px;
+  border-top: 15px solid #69895a;
+}
+
+.formcontent {
+  margin-left: 40px;
+}
+
+.my-form .form-group {
+  margin-left: 0px;
+  padding-bottom: 15px;
+}
+
+.my-form input[type="submit"] {
+  background-color: #69895a;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+}
+
+.contactgegevens {
+  display: block;
+}
+
+/* Media Queries */
+
+@media (min-width: 1024px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 350px auto autopx autopx autopx autopx autopx 100px;
+    grid-template-areas:
+      "header nav"
+      "mainimage mainimage"
+      "maintext maintext"
+      "showcase1 showcase2"
+      "showcase3 showcase4"
+      "showcase5 showcase6"
+      "showcase7 showcase8"
+      "showcase9 showcase10"
+      "footer footer";
+  }
+
+  header {
+    grid-area: header;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 25px;
+  }
+
+  nav {
+    grid-area: nav;
+    text-align: right;
+    margin-right: 25px;
+    padding-top: 55px;
+    padding-bottom: 10px;
+  }
+
+  li {
+    display: inline;
+    padding: 5px;
+  }
+}
